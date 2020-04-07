@@ -14,8 +14,7 @@ btn.addEventListener('click', e =>{
     fileList.innerHTML = ''
 
     for(let i=0; i< aFile.files.length; i++){
-
-        let Status = ''
+        let Status = '';
         let myForm = new FormData();
         myForm.append('aFile', aFile.files[i])
 
@@ -46,7 +45,7 @@ btn.addEventListener('click', e =>{
         })
         .finally(()=>{
             var li = document.createElement('p')
-            li.innerHTML = ' Upload ' + Status + ' für: ' + aFile.files[i].name 
+            li.innerHTML = i + ': Upload ' + Status + ' für: ' + aFile.files[i].name 
 
             fileList.appendChild(li)
         })
