@@ -3,4 +3,4 @@
 # Usage:
 
 - spin up the server
-- connect to server ...URL.../backed/
+- connect to server ...URL.../backend/
