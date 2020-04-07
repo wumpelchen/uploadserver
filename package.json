@@ -1,0 +1,19 @@
+{
+  "name": "uploadserver",
+  "version": "1.0.0",
+  "description": "simple Uploadserver with formidable",
+  "main": "uploadserver.js",
+  "scripts": {
+    "test": "node uploadserver.js"
+  },
+  "keywords": ["formidable", "express", "nodejs"],
+  "author": "Steve Ahrends",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "formidable": "^1.2.2",
+    "helmet": "^3.22.0"
+  }
+}
