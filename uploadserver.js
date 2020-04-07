@@ -31,18 +31,18 @@ app.post(`${baseURL}/upload`, (req, res)=>{
     mForm.parse(req)
 
     mForm.on('fileBegin', (name, file)=>{
-        file.path = __dirname + '/uploads/' + Date.now() + '-' + file.name
+        file.path = __dirname + '/uploads/' + Date.now() + '-' + file.name.replace(/ /, '_')
     })
 
     mForm.on('error', (err)=>{
         console.log(err)
         Status = 'Fehler beim Übertragen der Datei'
+        res.json({message: Status})
     })
 
     mForm.on('end', ()=>{
         Status = 'upload der Datei war erfolgreich'
+        res.json({message: Status})
     })
-
-    res.json({message: Status})
 
 })

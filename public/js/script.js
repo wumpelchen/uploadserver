@@ -30,7 +30,7 @@ btn.addEventListener('click', e =>{
                 progressBarBg.style.width = prozent.toFixed(2) + '%'
                 progressBarTXT.innerHTML = prozent.toFixed(2) + '%'
 
-                console.log(prozent.toFixed(0))
+                //console.log(prozent.toFixed(0))
             }
         }
 
